@@ -16,12 +16,12 @@ public class MineStairBuilder extends PluginBase {
 
     @Override
     public void onEnable() {
-        getLogger().info(TextFormat.GREEN + "MineStairBuilder plugin enabled!");
+        getLogger().info(TextFormat.GREEN + "MineStairBuilder Loaded!");
     }
 
     @Override
     public void onDisable() {
-        getLogger().info(TextFormat.RED + "MineStairBuilder plugin disabled!");
+        getLogger().info(TextFormat.RED + "MineStairBuilder Disabled!");
     }
 
     @Override
