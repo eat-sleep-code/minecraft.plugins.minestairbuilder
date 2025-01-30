@@ -1,6 +1,6 @@
 name: MineStairBuilder
 main: com.eatsleepcode.minestairbuilder.MineStairBuilder
-version: 2025.01.26.12
+version: 2025.01.30.12
 api: [1.0.11]
 author: eat-sleep-code
 description: Build a lighted staircase descending to the specified depth coordinate.

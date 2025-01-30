@@ -16,8 +16,10 @@ Ensure the area at least two blocks directly above the stairs is cleared of any 
 
   `/minestair 20`
 
-
 ## Known Issues
 
 - When water is directly adjacent to the stair area it can sometimes overwhelm the creation of the staircase.   This will result in some debris that needs to be cleaned up. 
 
+## Building Project
+
+Run `mvn clean package`.   The output will be saved to `/target/MineStairBuilder.jar`
