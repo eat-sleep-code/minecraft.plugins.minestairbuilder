@@ -1,6 +1,6 @@
 name: StairBuilder
 main: com.eatsleepcode.stairbuilder.StairBuilder
-version: 2025.02.01.22
+version: 2025.02.02.14
 api: [1.0.11]
 author: eat-sleep-code
 description: Build a lighted staircase descending to the specified depth coordinate.
