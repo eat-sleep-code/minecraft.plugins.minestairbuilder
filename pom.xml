@@ -4,12 +4,12 @@
 		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.eatsleepcode.minestairbuilder</groupId>
-	<artifactId>minestairbuilder</artifactId>
+	<groupId>com.eatsleepcode.stairbuilder</groupId>
+	<artifactId>stairbuilder</artifactId>
 	<version>1.0-SNAPSHOT</version>
 
 	<build>
-		<finalName>MineStairBuilder</finalName>
+		<finalName>StairBuilder</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

@@ -1,4 +1,4 @@
-# MineStairBuilder Minecraft (Nukkit) Plugin
+# StairBuilder Minecraft (Nukkit) Plugin
 
 Build a lighted staircase descending to the specified depth coordinate.
 
@@ -6,7 +6,7 @@ Build a lighted staircase descending to the specified depth coordinate.
 - [Nukkit Minecraft Server](https://github.com/PetteriM1/NukkitPetteriM1Edition/releases)
 
 ## Installation 
-- Place the `MineStairBuilder.jar` file in the `<Nukkit Installation Folder>/plugins/` folder.
+- Place the `StairBuilder.jar` file in the `<Nukkit Installation Folder>/plugins/` folder.
 
 ## Usage
 
@@ -14,7 +14,7 @@ Ensure the area at least two blocks directly above the stairs is cleared of any 
 
 - Create a stone-walled stairway to a depth of Y=20:
 
-  `/minestair 20`
+  `/stairs 20`
 
 ## Known Issues
 
@@ -22,4 +22,4 @@ Ensure the area at least two blocks directly above the stairs is cleared of any 
 
 ## Building Project
 
-Run `mvn clean package`.   The output will be saved to `/target/MineStairBuilder.jar`
+Run `mvn clean package`.   The output will be saved to `/target/StairBuilder.jar`
