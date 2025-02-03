@@ -18,7 +18,7 @@ Ensure the area at least two blocks directly above the stairs is cleared of any 
 
 ## Known Issues
 
-- When water is directly adjacent to the stair area it can sometimes overwhelm the creation of the staircase.   This will result in some debris that needs to be cleaned up. 
+- When gravel or water is found within the stair area it can sometimes overwhelm the creation of the staircase.   This will result in some debris that needs to be cleaned up. 
 
 ## Building Project
 
