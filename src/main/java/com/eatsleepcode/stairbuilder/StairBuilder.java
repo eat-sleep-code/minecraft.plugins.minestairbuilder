@@ -157,11 +157,37 @@ public class StairBuilder extends PluginBase {
 	
 					if (z == (landingLength + 1) + flightStepCount && stairDirection.equals("away")) {
 						Block stepBlock = Block.get(Block.NORMAL_STONE_STAIRS);
-						stepBlock.setDamage(getStairRotation(direction, 2)); // Rotate stairs
+						switch (direction) {
+							case "north":
+								stepBlock.setDamage(2);
+								break;
+							case "south":
+								stepBlock.setDamage(3);
+								break;
+							case "east":
+								stepBlock.setDamage(1);
+								break;
+							case "west":
+								stepBlock.setDamage(0);
+								break;
+						}
 						level.setBlock(blockPos, stepBlock, true);
 					} else if (z == (landingLength) + (stepsPerFlight - flightStepCount) && stairDirection.equals("toward")) {
 						Block stepBlock = Block.get(Block.NORMAL_STONE_STAIRS);
-						stepBlock.setDamage(getStairRotation(direction, 1)); // Rotate stairs
+						switch (direction) {
+							case "north":
+								stepBlock.setDamage(3);
+								break;
+							case "south":
+								stepBlock.setDamage(2);
+								break;
+							case "east":
+								stepBlock.setDamage(0);
+								break;
+							case "west":
+								stepBlock.setDamage(1);
+								break;
+						}
 						level.setBlock(blockPos, stepBlock, true);
 					}
 				}
@@ -186,24 +212,6 @@ public class StairBuilder extends PluginBase {
 				return new Vector3(start.x - z, y, start.z + x);
 			default:
 				return new Vector3(start.x + x, y, start.z + z); // Default to south
-		}
-	}
-
-
-
-	private int getStairRotation(String direction, int baseDamage) {
-		// Adjust stair rotation based on direction
-		switch (direction) {
-			case "north":
-				return (baseDamage + 1) % 4; // Rotate 90 degrees counterclockwise
-			case "south":
-				return (baseDamage + 3) % 4; // Rotate 90 degrees clockwise
-			case "east":
-				return baseDamage; // No change
-			case "west":
-				return (baseDamage + 2) % 4; // Rotate 180 degrees
-			default:
-				return baseDamage;
 		}
 	}
 
