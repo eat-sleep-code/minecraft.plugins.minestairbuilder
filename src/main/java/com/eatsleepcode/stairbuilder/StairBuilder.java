@@ -55,11 +55,9 @@ public class StairBuilder extends PluginBase {
 			int landingLength = flightWidth;
 			int stepsPerFlight = 10;
 		
-			//player.sendMessage(TextFormat.YELLOW + "Building stairs at " + start.toString() + " down to depth " + targetY);
 			buildStairwell(level, player, start, getPlayerDirection(player), ((flightWidth * 2) + 3), ((stepsPerFlight + (landingLength *2) + 2)), targetY, stepsPerFlight, landingLength);
 			buildStairs(level, player, start, getPlayerDirection(player), ((flightWidth * 2) + 3), ((stepsPerFlight + (landingLength *2) + 2)), targetY, stepsPerFlight, landingLength);
-            // buildLighting()
-
+            
 			player.sendMessage(TextFormat.GREEN + "Stairs built successfully");
 			return true;
         }
